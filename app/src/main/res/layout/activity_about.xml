@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/graylight"
     android:orientation="vertical"
-    tools:context=".AboutActivity">
+    tools:context=".Profile.AboutActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuahIndonesiaActivity"></activity>
-        <activity android:name=".BinatangHewanIndonesiaActivity" />
-        <activity android:name=".SuaraActivity" />
-        <activity android:name=".MainActivityBahasaInggris" />
-        <activity android:name=".KategoriBahasaActivity" />
-        <activity android:name=".WalkthroughtActivity">
+        <activity android:name=".Kuis.BahasaIndonesia.HasilActivity"></activity>
+        <activity android:name=".Kuis.BahasaIndonesia.KuisActivity" />
+        <activity android:name=".Suara.Indonesia.BuahActivityIndonesia" />
+        <activity android:name=".Suara.Indonesia.BinatangHewanIndonesiaActivity" />
+        <activity android:name=".Suara.Indonesia.SuaraActivity" />
+        <activity android:name=".Others.MainActivityBahasaInggris" />
+        <activity android:name=".Others.KategoriBahasaActivity" />
+        <activity android:name=".Petunjuk.WalkthroughtActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,33 +24,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HasilKuisActivity"
-            android:parentActivityName=".QuizActivity" />
+            android:name=".Kuis.BahasaInggris.HasilKuisActivity"
+            android:parentActivityName=".Kuis.BahasaInggris.QuizActivity" />
         <activity
-            android:name=".QuizActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Kuis.BahasaInggris.QuizActivity"
+            android:parentActivityName=".Others.MainActivity" />
         <activity
-            android:name=".AboutActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Profile.AboutActivity"
+            android:parentActivityName=".Others.MainActivity" />
         <activity
-            android:name=".CreditActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Profile.CreditActivity"
+            android:parentActivityName=".Others.MainActivity" />
         <activity
-            android:name=".DraganddropActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Game.DraganddropActivity"
+            android:parentActivityName=".Others.MainActivity" />
         <activity
-            android:name=".BuahActivity"
-            android:parentActivityName=".Sounds" />
+            android:name=".Suara.Inggris.BuahActivity"
+            android:parentActivityName=".Suara.Inggris.Sounds" />
         <activity
-            android:name=".ViewScore"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Suara.Inggris.BinatangHewan"
+            android:parentActivityName=".Suara.Inggris.Sounds" />
         <activity
-            android:name=".BinatangHewan"
-            android:parentActivityName=".Sounds" />
-        <activity
-            android:name=".Sounds"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".Suara.Inggris.Sounds"
+            android:parentActivityName=".Others.MainActivity" />
+        <activity android:name=".Others.MainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->

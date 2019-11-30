@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFC107"
-    tools:context=".Sounds">
+    tools:context=".Suara.Inggris.Sounds">
 
     <ImageView
         android:id="@+id/suaraHewan"
