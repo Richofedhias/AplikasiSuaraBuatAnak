@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/textBinatang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#EE501B"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sapi"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sapi"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tv_ayam"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/ayam"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tv_kodok"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/kodok"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layoutBinatang1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#EED21B"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView android:id="@+id/img_ayam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/chicken" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layoutBinatang2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#00ADEF"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ImageView android:id="@+id/img_sapi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:src="@drawable/cow" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layoutBinatang3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#80CC28"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView android:id="@+id/img_kodok"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/frog" />
+    </LinearLayout>
+</LinearLayout>
