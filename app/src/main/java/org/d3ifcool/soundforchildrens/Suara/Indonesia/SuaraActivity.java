@@ -7,11 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import org.d3ifcool.soundforchildrens.Others.KategoriBahasaActivity;
+import org.d3ifcool.soundforchildrens.Others.MainActivity;
 import org.d3ifcool.soundforchildrens.R;
 
 public class SuaraActivity extends AppCompatActivity {
     private ImageView hewan_binatang;
     private ImageView alat_musik;
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(SuaraActivity.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,5 +48,7 @@ public class SuaraActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

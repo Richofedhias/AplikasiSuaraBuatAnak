@@ -30,8 +30,10 @@ public class KategoriBahasaActivity extends AppCompatActivity {
         bahasaInggris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(KategoriBahasaActivity.this, MainActivity.class));
+                startActivity(new Intent(KategoriBahasaActivity.this, MainActivityBahasaInggris.class));
             }
         });
+
     }
+
 }

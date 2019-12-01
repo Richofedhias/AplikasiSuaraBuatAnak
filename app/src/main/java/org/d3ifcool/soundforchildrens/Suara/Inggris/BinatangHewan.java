@@ -2,6 +2,7 @@ package org.d3ifcool.soundforchildrens.Suara.Inggris;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -241,5 +242,13 @@ public class BinatangHewan extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        if (mp != null) {
+            mp.stop();
+        }
+        Intent intent = new Intent(BinatangHewan.this,Sounds.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
 }
